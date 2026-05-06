@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Lost & Found Poster</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--green-deep:#0a3d2e;
+--green-mid:#145c3f;
+--green-light:#c8e6d8;
+--gold:#c9960a;
+--cream:#faf8f2;
+--text:#1e2f26;
+}
+
+body{
+width:1400px;
+height:1000px;
+font-family:Arial, sans-serif;
+background:var(--cream);
+color:var(--text);
+}
+
+/* HEADER */
+header{
+background:var(--green-deep);
+color:white;
+padding:25px;
+text-align:center;
+border-bottom:5px solid var(--gold);
+}
+
+header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:16px;
+color:#f0c84a;
+}
+
+/* GRID */
+.container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+padding:20px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:18px;
+border-radius:10px;
+border:2px solid var(--green-light);
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h2{
+font-size:20px;
+color:var(--green-deep);
+margin-bottom:10px;
+border-bottom:2px solid var(--green-light);
+padding-bottom:5px;
+}
+
+/* SPECIAL CARDS */
+.problem{
+border:2px solid #ffb3b3;
+background:#fff5f5;
+}
+
+.solution{
+border:2px solid #bde5c8;
+background:#f5fff7;
+}
+
+.results{
+border:2px solid #ffe08a;
+background:#fff9e6;
+text-align:center;
+}
+
+.big{
+font-size:28px;
+font-weight:bold;
+color:var(--green-deep);
+}
+
+/* TEXT */
+p,li{
+font-size:13px;
+line-height:1.6;
+}
+
+ul{
+padding-left:18px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:12px;
+background:var(--green-deep);
+color:white;
+font-size:13px;
+border-top:4px solid var(--gold);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Smart Lost & Found System</h1>
+<p>RFID · Blockchain · Smart Lockers · Flutter</p>
+</header>
+
+<div class="container">
+
+<!-- ABSTRACT -->
+<div class="card">
+<h2>Abstract</h2>
+<p>
+A smart system designed to solve lost item issues in crowded environments using RFID tracking,
+blockchain security, and mobile applications.
+</p>
+</div>
+
+<!-- PROBLEM -->
+<div class="card problem">
+<h2>Problem</h2>
+<ul>
+<li>No tracking system</li>
+<li>Limited offices</li>
+<li>Difficult ownership verification</li>
+<li>Poor storage</li>
+</ul>
+<p><b>Result:</b> High loss rate</p>
+</div>
+
+<!-- SOLUTION -->
+<div class="card solution">
+<h2>Solution</h2>
+<ul>
+<li>RFID tracking</li>
+<li>Blockchain security</li>
+<li>Smart lockers with OTP</li>
+</ul>
+</div>
+
+<!-- OBJECTIVES -->
+<div class="card">
+<h2>Objectives</h2>
+<ul>
+<li>Improve recovery speed</li>
+<li>Ensure security</li>
+<li>Build scalable system</li>
+<li>Test and validate</li>
+</ul>
+</div>
+
+<!-- TECHNOLOGIES -->
+<div class="card">
+<h2>Technologies</h2>
+<ul>
+<li>Flutter</li>
+<li>Ethereum</li>
+<li>NFC / RFID</li>
+<li>Supabase</li>
+</ul>
+</div>
+
+<!-- ARCHITECTURE -->
+<div class="card">
+<h2>Architecture</h2>
+<p>4 Layers:</p>
+<ul>
+<li>Presentation</li>
+<li>Business Logic</li>
+<li>Services</li>
+<li>Data Layer</li>
+</ul>
+</div>
+
+<!-- FLOW -->
+<div class="card">
+<h2>System Flow</h2>
+<p>User → Report → Match → Locker → OTP → Pickup</p>
+</div>
+
+<!-- RESULTS -->
+<div class="card results">
+<h2>Results</h2>
+<p class="big">100%</p>
+<p>Tests Passed</p>
+<p>16 Requirements Completed</p>
+</div>
+
+<!-- CONCLUSION -->
+<div class="card">
+<h2>Conclusion</h2>
+<p>
+A secure and scalable system that improves lost item recovery
+and aligns with Vision 2030.
+</p>
+</div>
+
+</div>
+
+<footer>
+Taibah University · Graduation Project
+</footer>
+
+</body>
+</html>
